@@ -26,8 +26,7 @@ node{
 		//checkout([$class: 'GitSCM', branches: [[name: '*/release-2.10.0']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'hawk']], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'myId', url: 'https://github.com/MasterAlt/sunbird-devops.git']]])
 
 		checkout([$class: 'GitSCM', branches: [[name: '*/release-2.10.0']], extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'hawk']], userRemoteConfigs: [[url: 'https://github.com/MasterAlt/sunbird-devops.git']]])
-		checkout([$class: 'GitSCM', branches: [[name: '*/release-2.10.0']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'private']], userRemoteConfigs: [[credentialsId: 'amorphous-1', url: 'https://github.com/ekstep/sunbird-devops']]])
-
+		checkout([$class: 'GitSCM', branches: [[name: '*/release-2.10.0']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'private']], userRemoteConfigs: [[credentialsId: 'githubHarsha', url: 'https://github.com/ekstep/sunbird-devops']]])
 	}
 
 	// Have the Build 
