@@ -1,5 +1,6 @@
 node{
 	stage('Checkout'){
+		cleanWs()
 		echo "Creating Directories for X Project"
 
 		// Give all the repo names in place of one, two, three
