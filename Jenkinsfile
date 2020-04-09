@@ -23,10 +23,7 @@ node{
     	}
 		
 		// Method 2: Use checkout module to clone into specific folder and branch also use the private repo authentication
-		//checkout([$class: 'GitSCM', branches: [[name: '*/release-2.10.0']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'hawk']], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'myId', url: 'https://github.com/MasterAlt/sunbird-devops.git']]])
-
-		checkout([$class: 'GitSCM', branches: [[name: '*/release-2.10.0']], extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'hawk']], userRemoteConfigs: [[url: 'https://github.com/MasterAlt/sunbird-devops.git']]])
-		checkout([$class: 'GitSCM', branches: [[name: '*/release-2.10.0']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'private']], userRemoteConfigs: [[credentialsId: 'githubHarsha', url: 'https://github.com/ekstep/sunbird-devops']]])
+		checkout([$class: 'GitSCM', branches: [[name: '*/release-2.10.0']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'private']], userRemoteConfigs: [[credentialsId: 'privateCredentialID', url: 'https://github.com/ekstep/sunbird-devops']]])
 	}
 
 	// Have the Build 
