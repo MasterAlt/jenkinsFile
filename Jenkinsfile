@@ -19,6 +19,9 @@ node{
     	dir ('three') {
     	    git branch: "master", changelog: false, poll: false, url: 'https://github.com/smyaltamash/king.git'
     	}
+		//checkout([$class: 'GitSCM', branches: [[name: '*/release-2.10.0']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'hawk']], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'myId', url: 'https://github.com/MasterAlt/sunbird-devops.git']]])
+		checkout([$class: 'GitSCM', branches: [[name: '*/release-2.10.0']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'hawk']], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/MasterAlt/sunbird-devops.git']]])
+
 	}
 
 	// Have the Build 
