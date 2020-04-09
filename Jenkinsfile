@@ -3,7 +3,6 @@ node{
 		echo "Creating Directories for X Project"
 
 		// Give all the repo names in place of one, two, three
-		fileOperations([folderCreateOperation('test')])
         new File('one').mkdir()
         new File('two').mkdir()
         new File('three').mkdir()
