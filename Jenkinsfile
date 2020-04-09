@@ -14,7 +14,7 @@ node{
     	}
 
     	dir ('two') {
-    	    git branch: "release-2.7.0", changelog: false, poll: false, url: 'https://github.com/MasterAlt/sunbird-data-pipeline,git'
+    	    git branch: "release-2.7.0", changelog: false, poll: false, url: 'https://github.com/MasterAlt/sunbird-data-pipeline.git'
     	}
     	dir ('three') {
     	    git branch: "master", changelog: false, poll: false, url: 'https://github.com/smyaltamash/king.git'
